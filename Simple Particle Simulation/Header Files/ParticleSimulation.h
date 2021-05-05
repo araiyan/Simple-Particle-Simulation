@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstdlib>
+
 #include <SFML/Graphics.hpp>
 
 struct TriangleParticle
@@ -19,6 +21,7 @@ private:
 
 public:
     TriangleParticlePool();
-    void createParticle(sf::Vector2f position, sf::Vector2f velocity);
-    void update(sf::RenderWindow& window, sf::Time dT);
+    void createParticle(sf::Vector2f position, sf::Vector2f velocity, sf::Time lifeTime);
+    void destroyParticle(int& index);
+    void update(sf::RenderWindow& window, sf::Time& dT);
 };
