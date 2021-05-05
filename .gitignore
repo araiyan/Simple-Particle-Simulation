@@ -1,0 +1,10 @@
+
+*.sln
+.vs
+x64
+Simple Particle Simulation/libs
+Simple Particle Simulation/SFML-2.5.1
+*.filters
+*.user
+*.vcxproj
+*.props
